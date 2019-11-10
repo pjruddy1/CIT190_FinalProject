@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whack-A-Gopher</title>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website created for CIT190." />
+    <meta name="keywords" content="games, assignment, CIT190, NMC, northwestern michigan collage" />
+    <link rel="stylesheet" href="css/whackAGopher.css" />
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body class="col-12 col-m-12">
+
+    <h1>Whack-A-Gopher <span class="score">0</span></h1>
+    <hr />
+    <section>
+        <button id="startBtn">Start Game</button>
+       <div class="game">
+            <div class="hole hole1">
+                <div class="gopher"></div>
+            </div>
+            <div class="hole hole1">
+                <div class="gopher"></div>
+            </div>
+            <div class="hole hole1">
+                <div class="gopher"></div>
+            </div>
+            <div class="hole hole1">
+                <div class="gopher"></div>
+            </div>
+            <div class="hole hole1">
+                <div class="gopher"></div>
+            </div>
+            <div class="hole hole1">
+                <div class="gopher"></div>
+            </div>
+       </div>
+    </section>
+    
+    <hr />
+    <br>
+<!-- Trigger/Open The Modal -->
+<div><button id="whackAGopherModalBtn">Read Me</button>
+   
+    <div id="content"></div>
+    <!-- The Modal -->
+    <div id="whackAGopherModal" class="modal">
+        <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Hi there, Welcome to PJ's Fun House.  This is Whack-A-Gopher a game where the objective is to click as many gophers that come out of
+             the holes as possible.  Just simply use the mouse to click the gophers as they pop up.<br/>
+            This sight was orginaly developed on 10/20/19 and was last updated 11/3/19.<br/>
+            These games are Copyrighted by PEEJ Inc.<br/>
+            
+            We hope you have a fun time!</h3>
+      </div>
+      <script src="js/whackAGopher.js"></script>
+</body>
+</html>
+

@@ -35,45 +35,64 @@
     text-decoration: none;
     cursor: pointer;
 }
-header{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: whitesmoke;
-    border: solid black 2px;
-    border-radius: 25px;
-    opacity: .9;
-}
-footer{
-    color: aliceblue;
-    background-color: black;
-    border: solid yellow 2px;
-    border-radius: 25px;
-    opacity: .9;
+canvas {
+    margin-left: auto;
+    margin-right: auto;   
 }
 
-button{
-    background-color: slategray;
+button {
+    margin-left: auto;
+    margin-right: auto;
+    border: darkseagreen 1px groove;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px black;
+    background-color: cadetblue;
+    margin-top: 5%;
 }
 
-body{
-    background:url('../media/userInterfaceBackground.jpg');
+body {
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    font-family: cursive, Georgia, 'Times New Roman', Times, serif;
+    margin: 5%;
+    font-family: sans-serif;
+    size: 1.5em;
+    color: black;
+    text-shadow: 1px 1px lightslategray;
+}
+
+section {
+    background-color: rgba(0, 120, 141, 0.616);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+}
+
+div {
+    flex: 1;
+}
+
+h1 {
+    color: black;
+    font-size: 1.5em;
+    text-shadow: 1px 1px black;
     text-align: center;
-    align-content: center;
+    /*margin-left:10%;*/
 }
 
-.readMeContent{
-    background-color: whitesmoke;
-    border: solid black 2px;
-    border-radius: 25px;
-    opacity: .9;
-    max-width: 500px;
-    padding: 5px;
-    align-content: left;
+h2 {
+    color: black;
+    text-shadow: 1px 1px black;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    border-radius: 10px;
 }
 
-
+hr {
+    border: 2px solid cadetblue;
+}
 
 
 @media only screen and (min-width: 600px){
