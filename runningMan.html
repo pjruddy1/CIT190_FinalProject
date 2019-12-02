@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Running Man</title>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website created for CIT190." />
+    <meta name="keywords" content="games, assignment, CIT190, NMC, northwestern michigan collage" />
+    <link rel="stylesheet" href="css/runningMan.css" />
+   
+</head>
+
+<body class="col-12 col-m-12">
+
+    <h1>Running Man</h1>
+    <hr />
+    <section>
+        <button id="d2Btn">Start Game</button>
+        <canvas id="movingCanvas">The current browser does not support this functionality. Please try a different one! </canvas>
+    </section>
+    
+    
+    <hr />
+    <button onmousedown="jump(-1)" onmouseup="jump(.5)">JUMP</button>
+    <br>
+
+<p>Press the Jump Button to Jump</p>
+<p>How far can you run</p><!-- Trigger/Open The Modal -->
+<div>
+<button id="runningModalButton">Read Me</button>
+   
+<div id="runningContent"></div>
+<!-- The Modal -->
+<div id="runningModal" class="modal">
+    <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h4>Hi there, Welcome to PJ's Fun House.  Running Man is an endless runner where the objective is to run as far as you can by jumping over the obstacles that are coming at you.
+         Use the mouse button to jump over the obstacles when they come near you.<br/>
+        This sight was orginaly developed on 10/20/19 and was last updated 11/22/19.<br/>
+        These games are Copyrighted by PEEJ Inc.<br/>
+        
+        We hope you have a fun time!</h4>
+  </div>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/runningMan.js"></script>
+</body>
+</html>
+

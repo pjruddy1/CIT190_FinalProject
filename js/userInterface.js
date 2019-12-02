@@ -27,7 +27,7 @@ $(document).ready(function(){
     
     $("#whackAGopher").click(function(){
         $.ajax({
-            url: "whackAGopher.html",
+            url: "newGopher.html",
             success: function(result){
                 $("#content").html(result);
             }});

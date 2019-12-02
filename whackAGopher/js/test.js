@@ -26,7 +26,7 @@ window.onclick = function(event) {
 
 // variables
 var holes = document.querySelectorAll('.hole');
-var scoreBoard = document.getElementById('score');
+var scoreBoard = document.getElementById('displayScore');
 var gophers = document.querySelectorAll('.gopher');
 var lastHole;
 var idx;
@@ -49,7 +49,7 @@ function randomHole(holes){
 
 // makes gophers peek out of hole
 function peep() {
-    var time = randomTime(400, 1000);
+    var time = randomTime(2000, 10000);
     var hole = randomHole(holes);
     hole.classList.add('up');
     setTimeout(() => {
@@ -59,7 +59,7 @@ function peep() {
   }
   // function that starts the game sets variables accordingly
   function startGame() {
-    scoreBoard.textContent = 0;
+    scoreBoard.innerhtml = 0;
     timeUp = false;
     score = 0;
     peep();
@@ -69,7 +69,8 @@ function peep() {
   function bonk(e) {
     score++;
     //this.parentNode.classList.remove('up');
-    scoreBoard.textContent = score;
+    scoreBoard.innerHTML = score;
+    console.log("Score: " + score);
   }
   // event listener for when the gopher is bonked
   gophers.forEach(addEventHandler);
@@ -77,6 +78,7 @@ function peep() {
       this.addEventListener('click', bonk)
       };
 
-  document.getElementById("startBtn").addEventListener('click', startGame);   // This is the handler for the button which starts
-                                                               // clicked. 
-
+  document.getElementById("startBtn").addEventListener("click", function () {    // This is the handler for the button which starts
+               
+    startGame();                                                            // clicked. 
+});
